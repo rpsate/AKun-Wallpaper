@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登陆</title>
+<link type="text/css" rel="stylesheet" href="../style/reset.css">
+<link type="text/css" rel="stylesheet" href="../style/main.css">
+<!--[if IE 6]>
+<script type="text/javascript" src="../js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="headerBar">
+	<div class="logoBar login_logo">
+		<div class="comWidth">
+			<h3 class="welcome_title">基于智能搜索的高清壁纸平台</h3>
+		</div>
+	</div>
+</div>
+
+<div class="loginBox">
+	<div class="login_cont">
+		<form method="post" action="doLogin.php">
+			<ul class="login">
+				<li class="l_tit">账号</li>
+				<li class="mb_10">
+					<input type="text" name="username" class="login_input">
+				</li>
+				<li class="l_tit">密码</li>
+				<li class="mb_10">
+					<input type="password" name="password" class="login_input">
+				</li>
+				<li class="l_tit">验证码</li>
+				<li class="mb_10">
+					<input type="text" name="captcha" class="login_input">
+				</li>
+				<li class="l_tit">
+					<img src="getCaptcha.php" id="captchaImage" width="80" height="30" onclick="captchaRefresh()">
+				</li>
+				<li class="autoLogin">
+					<input type="checkbox" id="a1" class="checked" name="autoLogin" value="1"><label for="a1">自动登陆</label>
+				</li>
+				<li><input type="submit" value="" class="login_btn"></li>
+			</ul>
+		</form>
+	</div>
+</div>
+
+<div class="hr_25"></div>
+<div class="footer">
+	<p>基于智能搜索的高清壁纸平台V1.0</p>
+</div>
+
+<script>
+    function captchaRefresh() {
+        var captchaImage = document.getElementById("captchaImage");
+        captchaImage.src = "getCaptcha.php?rand="+Math.random();
+    }
+</script>
+
+</body>
+</html>

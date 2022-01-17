@@ -1,0 +1,102 @@
+@charset "utf-8";
+/*公用*/
+html,body {
+    min-height: 100vh;
+    position: relative;
+}
+.comWidth {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*logo*/
+.logoBar {
+    height: 85px;
+    background-color: #1D7AD9;
+}
+
+/*登陆*/
+.login_logo .comWidth {
+    width: 460px;
+}
+
+.welcome_title {
+    font: 22px/85px "Microsoft YaHei", "微软雅黑";
+    color: #FFF;
+    float: left;
+}
+
+.loginBox {
+    width: 458px;
+    border: #999 solid 1px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.login_cont {
+    padding: 15px 76px;
+}
+
+.l_tit {
+    color: #666;
+    line-height: 20px;
+}
+
+.mb_10 {
+    margin-bottom: 10px;
+}
+
+.login_input {
+    border: #999 solid 1px;
+    height: 32px;
+    line-height: 32px \9;
+    text-indent: 5px;
+    width: 100%;
+}
+
+.autoLogin {
+    padding-top: 27px;
+    padding-bottom: 28px;
+}
+
+.checked {
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+}
+
+.login_btn {
+    width: 309px;
+    height: 36px;
+    cursor: pointer;
+    background: url(../images/icon/login_btn.jpg) left top no-repeat;
+}
+
+.hr_25 {
+    height: 25px;
+}
+
+/*底部*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #D4D4D4;
+    line-height: 24px;
+    padding: 50px 0;
+}
+
+.footer i {
+    font-style: normal;
+    margin: 0 5px;
+}
+
+.footer a {
+    color: #000;
+}
+
+.footer a:hover {
+    color: #F60;
+}
